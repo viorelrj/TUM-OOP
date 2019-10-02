@@ -1,7 +1,6 @@
-package com.company;
+package com.labs;
 
-import com.company.task1.Task1;
-import com.company.task2.Task2;
+import com.labs.lab2.task2.Task2;
 
 public class Main {
 

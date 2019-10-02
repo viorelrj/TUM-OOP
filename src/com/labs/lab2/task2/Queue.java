@@ -1,6 +1,4 @@
-package com.company.task2;
-
-import javax.management.QueryEval;
+package com.labs.lab2.task2;
 
 public class Queue {
     private int value;

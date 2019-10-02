@@ -1,4 +1,4 @@
-package com.company.task1;
+package com.labs.lab2.task1;
 
 public class Box {
     private float height;
