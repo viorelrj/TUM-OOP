@@ -1,11 +1,12 @@
 package com.labs.lab2.task1;
 
 public class Box {
+    private float defaultSize = 1;
+
     private float height;
     private float width;
     private float depth;
 
-    private float defaultSize = 1;
 
     public Box(float height, float width, float depth) {
         this.height = height;

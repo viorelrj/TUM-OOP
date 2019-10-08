@@ -1,10 +1,10 @@
 package com.labs;
 
-import com.labs.lab2.task2.Task2;
+import com.labs.lab3.Task;
 
 public class Main {
 
     public static void main(String[] args) {
-	    Task2.main();
+	    Task.main();
     }
 }
