@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ced8ac9-e765-41d9-8253-7f4c5c550900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab3/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab3/TextHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/labs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/labs/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/labs/lab2/task1/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/labs/lab2/task1/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/labs/lab3/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/labs/lab3/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/labs/lab3/TextHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/labs/lab3/TextHelper.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +78,7 @@
       <workItem from="1569880333125" duration="432000" />
       <workItem from="1570013550089" duration="295000" />
       <workItem from="1570013859749" duration="1758000" />
-      <workItem from="1570565042600" duration="8651000" />
+      <workItem from="1570565042600" duration="9273000" />
     </task>
     <servers />
   </component>

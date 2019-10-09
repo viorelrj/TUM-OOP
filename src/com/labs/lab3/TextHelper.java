@@ -52,30 +52,16 @@ public class TextHelper {
         input = input.toLowerCase().replaceAll("[^a-z\\s]", "");
         input = getSquashedBy(input, " ");
 
-        int wordBegin = 0;
-        int wordEnd = 0;
-        String word = null;
-
         HashMap<String, Integer> wordHashMap = new HashMap<String, Integer>();
 
-        while(wordBegin < input.length() - 1) {
-            wordEnd = wordBegin;
+        String[] words = input.split("\\s");
 
-            while(wordEnd < input.length() - 1 && input.charAt(wordEnd) != ' ') {
-                wordEnd++;
-            }
-
-            if (wordBegin != wordEnd && wordBegin < input.length()) {
-                word = input.substring(wordBegin, wordEnd);
-            }
-
+        for(String word: words) {
             if(wordHashMap.containsKey(word)) {
                 wordHashMap.put(word, wordHashMap.get(word) + 1);
             } else {
                 wordHashMap.put(word, 1);
             }
-
-            wordBegin = wordEnd + 1;
         }
 
         return wordHashMap;
