@@ -2,55 +2,67 @@ package com.labs.lab3;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 
 public class TextHelper {
     private static String vowelRegex = "aouiey";
 
-    private static String getSquashedBy(String input, String item) {
+    private static String eliminateRepeatingOccurencies(String input, String item) {
         return input.replaceAll("(" + item + ")+", item);
+    }
+
+    private static int countOccurences(String input, Character val) {
+        int counter = 0;
+
+        for (int i = 1; i < input.length(); i++)  {
+            if (input.charAt(i) == val) counter++;
+        }
+
+        return counter;
     }
 
     private static int countStickedOccurences(String input, Character val) {
         int counter = 0;
 
-        input = input.strip();
-
         for (int i = 1; i < input.length(); i++)  {
-            if (input.charAt(i) == val && input.charAt(i - 1) != val) counter++;
+            if (input.charAt(i) == val && input.charAt(i -1 ) != val) counter++;
         }
 
         return counter;
     }
 
     public static int countSentences(String input) {
-        String sanitizedInput = getSquashedBy(input, ".");
-        return countStickedOccurences(sanitizedInput, '.');
+        String lowerCase = input.toLowerCase();
+        String sanitizedInput = lowerCase.replaceAll("[.?!]+", ".").replaceAll( "[!?]", ".");
+        int flag = (lowerCase.replaceAll("[^a-z]", "").length() > 0)? 1 : 0;
+
+        return Math.max(sanitizedInput.replaceAll("[^.]", "").length(), flag);
     }
 
     public static int countWords(String input) {
-        String sanitizedInput = getSquashedBy(input, " ");
-        return countStickedOccurences(input, ' ');
+        String sanitizedInput = input.toLowerCase().replaceAll("[^a-z-']", " ").strip();
+        sanitizedInput = eliminateRepeatingOccurencies(sanitizedInput, " ");
+
+        return (sanitizedInput.length() > 0)? sanitizedInput.split("\\s").length : 0;
     }
 
     public static int countLetters(String input) {
-        String letters = input.replaceAll("[^a-zA-Z]","");
+        String letters = input.toLowerCase().replaceAll("[^a-z]","");
         return letters.length();
     }
 
     public static int countVowels(String input) {
-        String vowels = input.toLowerCase().replaceAll("[^" + vowelRegex + "]", "");
-        return vowels.length();
+        String letters = input.toLowerCase().replaceAll("[^a-z]", "");
+        return letters.replaceAll("[^" + vowelRegex + "]", "").length();
     }
 
     public static int countConsonants(String input) {
-        String letters = input.toLowerCase().replaceAll("[^a-zA-Z]", "");
+        String letters = input.toLowerCase().replaceAll("[^a-z]", "");
         return letters.replaceAll("[" + vowelRegex + "]", "").length();
     }
 
     private static HashMap<String, Integer> getWordHashMap(String input) {
         input = input.toLowerCase().replaceAll("[^a-z\\s]", "");
-        input = getSquashedBy(input, " ");
+        input = eliminateRepeatingOccurencies(input, " ");
 
         HashMap<String, Integer> wordHashMap = new HashMap<String, Integer>();
 
