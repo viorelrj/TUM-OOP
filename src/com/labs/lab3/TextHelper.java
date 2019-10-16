@@ -80,23 +80,20 @@ public class TextHelper {
     }
 
     public static String getLongestWord(String input) {
-        HashMap<String, Integer> wordHashMap = getWordHashMap(input);
+        String sanitizedInput = input.toLowerCase().replaceAll("[^a-z-']", " ").strip();
+        sanitizedInput = eliminateRepeatingOccurencies(sanitizedInput, " ");
 
-        Integer maxLength = 0;
-        String maxKey = null;
+        String words[] = sanitizedInput.split("\\s");
 
-        String key = null;
+        String longestWord = "";
 
-        for (HashMap.Entry<String, Integer> entry : wordHashMap.entrySet()) {
-            key = entry.getKey();
-
-            if (key.length() > maxLength) {
-                maxLength = key.length();
-                maxKey = key;
+        for (String word: words) {
+            if (word.length() > longestWord.length()) {
+                longestWord = word;
             }
         }
 
-        return maxKey;
+        return longestWord;
     }
 
     public static ArrayList<String> getTopWords(String input, int count) {
