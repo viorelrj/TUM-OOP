@@ -1,6 +1,6 @@
 package com.labs;
 
-import com.labs.lab3.Task;
+import com.labs.lab4.Task;
 
 public class Main {
 
