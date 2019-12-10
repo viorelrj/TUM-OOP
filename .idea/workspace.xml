@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ced8ac9-e765-41d9-8253-7f4c5c550900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/AdministrativeStaff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/Doctor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/FrontDeskStaff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/Hospital.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/Nurse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/OperationsStaff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/Receptionist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/Surgeon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/SurgicalTechnologist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/TechnicalStaff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/Technician.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/labs/lab6/Technologist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/labs/lab7/Cube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/labs/lab7/GeometricBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/labs/lab7/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/labs/lab7/Parallelepiped.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/labs/lab7/Sphere.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/labs/lab6/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/labs/lab6/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/labs/lab6/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/labs/lab6/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/labs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/labs/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +100,7 @@
       <workItem from="1575216940101" duration="8974000" />
       <workItem from="1575231111628" duration="5000" />
       <workItem from="1575317974907" duration="638000" />
-      <workItem from="1576011781150" duration="2302000" />
+      <workItem from="1576011781150" duration="3546000" />
     </task>
     <servers />
   </component>
@@ -131,10 +121,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="768" y="274" width="374" height="565" key="#com.intellij.ide.util.MemberChooser" timestamp="1576013714158">
+    <state x="768" y="274" width="374" height="565" key="#com.intellij.ide.util.MemberChooser" timestamp="1576015731840">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="768" y="274" width="374" height="565" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1576013714158" />
+    <state x="768" y="274" width="374" height="565" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1576015731840" />
     <state x="743" y="313" width="424" height="487" key="FileChooserDialogImpl" timestamp="1575319435268">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
