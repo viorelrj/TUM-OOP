@@ -1,6 +1,10 @@
 package com.labs.lab7;
 
 public class Sphere extends GeometricBody {
+    public Sphere(double radius) {
+        this.radius = radius;
+    }
+
     double radius;
 
     @Override

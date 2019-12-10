@@ -1,6 +1,10 @@
 package com.labs.lab7;
 
 public class Cube extends GeometricBody {
+    public Cube(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
     double sideLength;
 
     @Override
