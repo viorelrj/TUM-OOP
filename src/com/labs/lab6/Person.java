@@ -7,13 +7,14 @@ enum Gender {
     female
 }
 
-public class Person {
+public abstract class Person {
     String title;
     String givenName;
     String middleName;
     String familyName;
     LocalDate birthDate;
     Gender gender;
+    Phone phone;
 
     public Person(String title, String givenName, String middleName, String familyName, LocalDate birthDate, Gender gender, Phone phone) {
         this.title = title;
@@ -23,9 +24,7 @@ public class Person {
         this.birthDate = birthDate;
         this.gender = gender;
         this.phone = phone;
-    }
-
-    Phone phone;
+    };
 
     public String getFullName() {
         return givenName + " " + middleName + " " + familyName;

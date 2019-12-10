@@ -9,6 +9,8 @@ import java.util.Date;
 
 public class Patient extends Person {
     String id;
+    Hospital[] hospitals;
+    OperationsStaff[] operationsStaff;
 
     public Patient(String title, String givenName, String middleName, String familyName, LocalDate birthDate, Gender gender, Phone phone) {
         super(title, givenName, middleName, familyName, birthDate, gender, phone);
